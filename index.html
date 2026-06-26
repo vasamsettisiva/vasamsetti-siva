@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree Clone Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="builder-panel">
+            <h2>Profile Builder</h2>
+            
+            <div class="input-group">
+                <label for="profile-path">Custom Profile Path</label>
+                <div class="path-input-wrapper">
+                    <span>linktree.clone/</span>
+                    <input type="text" id="profile-path" placeholder="yourname" value="johndoe">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="profile-name">Display Name</label>
+                <input type="text" id="profile-name" placeholder="John Doe" value="John Doe">
+            </div>
+
+            <div id="links-container">
+                <h3>Your Links</h3>
+                </div>
+
+            <button id="add-link-btn" class="btn secondary-btn">+ Add New Link</button>
+            <button id="save-profile-btn" class="btn primary-btn">Save Profile</button>
+            
+            <div id="status-message" class="status-message"></div>
+        </div>
+
+        <div class="preview-panel">
+            <div class="phone-mockup">
+                <div class="preview-header">
+                    <div class="preview-avatar">JD</div>
+                    <h1 id="preview-name">John Doe</h1>
+                    <p id="preview-path-display">@johndoe</p>
+                </div>
+                <div id="preview-links" class="preview-links-container">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
